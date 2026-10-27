@@ -1,0 +1,17 @@
+{
+  "id": "guangzhou",
+  "title": { "en": "Block Guangzhou", "zh": "方块羊城" },
+  "intro": {
+    "en": "Dress a block traveler and walk a dusk-lit Guangzhou: the river, a twisted tower, arcade streets, and a camera that stamps each place you find.",
+    "zh": "装扮方块旅人，步行黄昏的广州：珠江、扭转高塔、骑楼老街，用相机为到过的地方盖章。"
+  },
+  "officialFiles": [
+    "vendor/index.html",
+    "vendor/gz.css",
+    "vendor/gz.js",
+    "vendor/LICENSE.txt"
+  ],
+  "playHtml": "play.html",
+  "aspect": "phone",
+  "githubRepo": "ypaaaaaaaaaaaaa/guangzhou"
+}
