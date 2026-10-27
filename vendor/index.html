@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Block Guangzhou</title>
+<link rel="stylesheet" href="gz.css">
+</head>
+<body>
+<div id="stage">
+<canvas id="view"></canvas>
+<div id="stick" aria-hidden="true"><div id="knob"></div></div>
+<div id="acts" aria-hidden="true">
+  <button id="jump" type="button" aria-label="Jump">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 4.2 L18.2 12.2 H14.2 V19.8 H9.8 V12.2 H5.8 Z"/></svg>
+  </button>
+  <button id="run" type="button" aria-label="Run" aria-pressed="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 7.2 L11.2 12 L5 16.8 Z M12.2 7.2 L18.4 12 L12.2 16.8 Z"/></svg>
+  </button>
+  <button id="shot" type="button" aria-label="Photo">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="1.4" fill="currentColor"/><path fill="none" stroke="currentColor" stroke-width="2" d="M8 5.5 H16 L17.2 7.4 H19.2 V18.2 H4.8 V7.4 H6.8 Z"/></svg>
+  </button>
+</div>
+<button id="gear" type="button" aria-label="Dress and notes" aria-expanded="false">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10.2 2.6 H13.8 L14.3 5.1 C14.9 5.3 15.4 5.6 15.9 6 L18.2 5 L20.1 7.2 L18.4 9 C18.5 9.6 18.5 10.3 18.4 11 L20.1 12.8 L18.2 15 L15.9 14 C15.4 14.4 14.9 14.7 14.3 14.9 L13.8 17.4 H10.2 L9.7 14.9 C9.1 14.7 8.6 14.4 8.1 14 L5.8 15 L3.9 12.8 L5.6 11 C5.5 10.4 5.5 9.7 5.6 9 L3.9 7.2 L5.8 5 L8.1 6 C8.6 5.6 9.1 5.3 9.7 5.1 Z M12 9.1 A2.9 2.9 0 1 0 12 14.9 A2.9 2.9 0 1 0 12 9.1 Z"/></svg>
+</button>
+<aside id="sheet" hidden>
+  <h2>方块羊城</h2>
+  <p class="sub">Block Guangzhou</p>
+  <p class="lab">肤色</p>
+  <div class="row" id="row-skin" data-part="skin"></div>
+  <p class="lab">发型</p>
+  <div class="row" id="row-hair" data-part="hair"></div>
+  <p class="lab">上衣</p>
+  <div class="row" id="row-shirt" data-part="shirt"></div>
+  <p class="lab">裤子</p>
+  <div class="row" id="row-pants" data-part="pants"></div>
+  <p class="lab">帽子</p>
+  <div class="row" id="row-hat"></div>
+  <p class="lab">天色</p>
+  <div class="row" id="row-sky"></div>
+  <p class="lab">图鉴</p>
+  <ul id="album"></ul>
+  <p class="help">左手按住行走，摇杆跟随手指。右侧滑动转头。跳、跑、快门在右下。走近景点再按快门盖章。</p>
+  <p class="help">Hold the left side to walk — the knob follows your finger. Swipe the right side to look. Jump, run, and the shutter sit at the lower right.</p>
+  <p class="credit">idea after @ns2250225 (ns2250225/guangzhou); clean-room implementation, no code copied</p>
+</aside>
+<div id="toast"></div>
+<div id="flash"></div>
+</div>
+<script src="gz.js"></script>
+</body>
+</html>
